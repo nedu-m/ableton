@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: orange;
+  height: 80px;
+  width: 100%;
+  color: black;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s all;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
