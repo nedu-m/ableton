@@ -19,11 +19,11 @@ export default function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' exact component={About} />
-          <Route path='/contact' exact component={Contact} />
-          <Route path='/explore' exact component={Explore} />
-          <Route path='/waitlist' exact component={WaitList} />
+          <Route path='/' exact element={<Home/>} />
+          <Route path='/about' exact element={<About/>} />
+          <Route path='/contact' exact element={<Contact/>} />
+          <Route path='/explore' exact element={<Explore />} />
+          <Route path='/waitlist' exact element={<WaitList/>} />
         </Routes>
       </Router>
     </Wrapper>
