@@ -36,3 +36,35 @@
   font-size: 2rem;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s all;
+  }
+
+  .nav-links.active {
+    background: greenyellow;
+    left: 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .nav-icon {
+    display: flex;
+  }
+}
