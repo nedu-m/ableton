@@ -1,0 +1,23 @@
+.bg-image {
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 49rem;
+}
+
+.bg-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 215px;
+  height: 52px;
+  margin-left: -107px;
+  margin-top: -26px;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .bg-image {
+    background-image: url('../images/resposive-header.jpg');
+  }
+}

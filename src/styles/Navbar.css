@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: whitesmoke;
+  background: white;
   height: 60px;
   width: 100%;
   color: black;
@@ -29,7 +29,21 @@
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: blueviolet;
+}
+
+.nav__logo {
+  z-index: 30;
+  position: relative;
+  margin-left: 1.25rem;
+  margin-right: 2em;
+  margin-bottom: 1.25rem;
+}
+
+.nav__logo__img {
+  display: block;
+  width: 3.75em;
+  height: 1.75em;
 }
 
 .nav-icon {
@@ -38,16 +52,19 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 63.9375em) {
   .navbar {
     position: relative;
+    z-index: 20;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
     position: absolute;
-    text-align: center;
+    vertical-align: middle;
+    padding-left: .625rem;
+
     width: 100%;
     top: 80px;
     left: -100%;
@@ -55,14 +72,23 @@
   }
 
   .nav-links.active {
-    background: whitesmoke;
+    background: blue;
     left: 0;
+    font-weight: bold;
+    font-size: .800rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    color: white;
   }
 
   .nav-item {
-    padding: 10px 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1px 0;
+    border-bottom: 1px;
   }
 
   .nav-icon {
