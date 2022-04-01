@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 49rem;
+  width: 100%;
 }
 
 .bg-name {
@@ -14,10 +15,20 @@
   height: 52px;
   margin-left: -107px;
   margin-top: -26px;
+  color: rgb(253, 89, 72);
+  font-size: 450%;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 63.9375em) {
   .bg-image {
     background-image: url('../images/resposive-header.jpg');
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .bg-name {
+    text-align: center;
+    left: 42%;
   }
 }

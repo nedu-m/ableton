@@ -15,11 +15,7 @@ const Home = () => {
   return (
     <ImageWrapper>
       <div className='bg-image'>
-        <svg className='bg-name' viewBox='0 0 430 104'>
-          <h1>Ableton</h1>
-          <g fill='#FD5948'>
-          </g>
-        </svg>
+        <h1 className='bg-name'>Ableton</h1>
       </div>
     </ImageWrapper>
   );
