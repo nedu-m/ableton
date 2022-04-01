@@ -9,14 +9,14 @@
 
 .bg-name {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 44%;
+  left: 44%;
   width: 215px;
   height: 52px;
-  margin-left: -107px;
-  margin-top: -26px;
+  margin-left: -115px;
+  margin-top: -20px;
   color: rgb(253, 89, 72);
-  font-size: 450%;
+  font-size: 130px;
   font-weight: bolder;
 }
 
@@ -26,9 +26,10 @@
   }
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 63.9375em) {
   .bg-name {
     text-align: center;
     left: 42%;
+    font-size: 450%;
   }
 }
